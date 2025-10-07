@@ -22,6 +22,19 @@ public class ReverseAPositiveInt {
             value /= 10; // To get rid of the remainder || To get the quotient we use "/ Division"
         }
 
+
+        // Another Basic - Easy and a simple method down below!
+        // You can customize the program to get the num from the user
+        
+        // int num = 123456;
+        // int ans = 0;
+        // while(num>0){
+        //     int rem = num % 10;   // takes the last digit
+        //     num /= 10;          // removes that digit. (num = num / 10) => Both are same
+        //     ans = ans * 10 + rem;   // builds the reversed number
+        // }
+        // System.out.println(ans);
+
         sc.close();
     }
 }
