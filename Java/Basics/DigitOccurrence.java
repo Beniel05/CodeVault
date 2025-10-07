@@ -14,11 +14,12 @@ public class DigitOccurrence {
         int temp = integerValue; // Just not to change the actual value, I'm taking it into a temporary variable
 
         while(temp>0){
-            int lastValue = temp % 10; // To get the remainder, use % - we're going to check from right to left
+            int lastValue = temp % 10; // To get the Remainder, use % - we're going to check from right to left
             if(lastValue == digit){
                 count++;
             }
             temp = temp / 10; // temp /= 10;
+            // The above line is used to get the Quotient. To get rid of the last digit
         }
 
         System.out.println("The total number of " + digit + " in " + integerValue + " is: " + count);
