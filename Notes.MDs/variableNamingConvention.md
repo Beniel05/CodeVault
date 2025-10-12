@@ -21,7 +21,7 @@
 
 ---
 
-## ☕ Java Examples
+>Java Examples
 
 ```java
 int age = 25;                // normal variable
@@ -29,8 +29,9 @@ String firstName = "Beniel"; // camelCase
 final int MAX_SCORE = 100;   // constant
 int _temp = 10;              // starts with underscore (valid)
 int $value = 50;             // starts with dollar sign (valid)
+```
 
-## Javascript Examples 
+>Javascript Examples 
 
 ```Javascript
 let age = 25;                  // normal variable
@@ -38,3 +39,4 @@ const firstName = "Beniel";    // constant with const
 const MAX_SCORE = 100;         // constant uppercase
 let _temp = 10;                // starts with underscore
 let $value = 50;               // starts with dollar sign
+```
