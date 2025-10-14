@@ -2,6 +2,7 @@
 
 > Javascript is a Scripting Language
 > Javascript's naming convention follows camelCase format. 
+> Js allows both single and double quotation for Strings ( '...' | "..." )
 
 # How to run JavaScript ?
 
