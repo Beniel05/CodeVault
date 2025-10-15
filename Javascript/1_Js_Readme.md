@@ -3,6 +3,7 @@
 > Javascript is a Scripting Language
 > Javascript's naming convention follows camelCase format. 
 > Js allows both single and double quotation for Strings ( '...' | "..." )
+> Semicolons are not madatory in most of the parts in js, but using them avoids unwanted conflicts
 
 # How to run JavaScript ?
 
