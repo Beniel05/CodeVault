@@ -7,24 +7,23 @@ If the conversion fails, return "Not a number".
 */
 
 function stringToNumber(input) {
-    let number = Number(input);
-    if (isNaN(number)) {
-        // isNaN() checks whether a value is “Not a Number”
-        return "Not a number";
-    } else {
-        return number;
-    }
+  let number = Number(input);
+  if (isNaN(number)) {
+    // isNaN() checks whether a value is “Not a Number”
+    return "Not a number";
+  } else {
+    return number;
+  }
 }
 
-/*
-Example Inputs and Outputs:
---------------------------------
-stringToNumber("42")        ➜  42
-stringToNumber("3.14")      ➜  3.14
-stringToNumber("hello")     ➜  "Not a number"
-stringToNumber("")          ➜  0
-stringToNumber("100abc")    ➜  "Not a number"
-*/
+// Example:
+const input1 = "42";
+console.log(`Input: "${input1}" → Output:`, stringToNumber(input1));
+// Try other examples:
+console.log(stringToNumber("3.14"));     // 3.14
+console.log(stringToNumber("hello"));    // "Not a number"
+console.log(stringToNumber(""));         // 0
+console.log(stringToNumber("100abc"));   // "Not a number"
 
 
 
@@ -35,19 +34,20 @@ For example, true becomes false, 0 becomes true, etc.
 */
 
 function flipBoolean(input) {
-    return !Boolean(input);
+  // Boolean(input) converts the value to true or false
+  // The ! operator flips (negates) that boolean value
+  return !Boolean(input);
 }
 
-/*
-Example Inputs and Outputs:
---------------------------------
-flipBoolean(true)      ➜  false
-flipBoolean(false)     ➜  true
-flipBoolean(1)         ➜  false
-flipBoolean(0)         ➜  true
-flipBoolean("")        ➜  true
-flipBoolean("hello")   ➜  false
-*/
+// Example:
+const input2 = 0;
+console.log(`Input: ${input2} → Output:`, flipBoolean(input2));
+// Try other examples:
+console.log(flipBoolean(true));      // false
+console.log(flipBoolean(false));     // true
+console.log(flipBoolean(1));         // false
+console.log(flipBoolean(""));        // true
+console.log(flipBoolean("hello"));   // false
 
 
 
@@ -58,19 +58,18 @@ If it's a number, return "I'm a number!", if it's a string, return "I'm a string
 */
 
 function whatAmI(input) {
-    let type = typeof input;
-    return `I'm a ${type}!`;
+  let type = typeof input;
+  return `I'm a ${type}!`;
 }
 
-/*
-Example Inputs and Outputs:
---------------------------------
-whatAmI(42)           ➜  "I'm a number!"
-whatAmI("hello")      ➜  "I'm a string!"
-whatAmI(true)         ➜  "I'm a boolean!"
-whatAmI([1, 2, 3])    ➜  "I'm a object!"
-whatAmI(undefined)    ➜  "I'm a undefined!"
-*/
+// Example:
+const input3 = [1, 2, 3];
+console.log(`Input: ${JSON.stringify(input3)} → Output:`, whatAmI(input3));
+// Try other examples:
+console.log(whatAmI(42));          // "I'm a number!"
+console.log(whatAmI("hello"));     // "I'm a string!"
+console.log(whatAmI(true));        // "I'm a boolean!"
+console.log(whatAmI(undefined));   // "I'm a undefined!"
 
 
 
@@ -81,22 +80,17 @@ if the value is truthy in JavaScript, or "It's falsey!" if it's falsey.
 */
 
 function isItTruthy(input) {
-    if (input) {
-        return "It's truthy!";
-    } else {
-        return "It's falsey!";
-    }
+  if (input) {
+    return "It's truthy!";
+  } else {
+    return "It's falsey!";
+  }
 }
 
-/*
-Example Inputs and Outputs:
---------------------------------
-isItTruthy(true)       ➜  "It's truthy!"
-isItTruthy(false)      ➜  "It's falsey!"
-isItTruthy(0)          ➜  "It's falsey!"
-isItTruthy(1)          ➜  "It's truthy!"
-isItTruthy("")         ➜  "It's falsey!"
-isItTruthy("hello")    ➜  "It's truthy!"
-isItTruthy(null)       ➜  "It's falsey!"
-isItTruthy(undefined)  ➜  "It's falsey!"
-*/
+// Example:
+const input4 = "";
+console.log(`Input: "${input4}" → Output:`, isItTruthy(input4));
+// Try other examples:
+console.log(isItTruthy(true));       // "It's truthy!"
+console.log(isItTruthy(false));      // "It's falsey!"
+console.log(isItTruthy(0));          // "It's
