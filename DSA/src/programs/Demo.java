@@ -1,7 +1,7 @@
 package programs;
 import app.Main;
 
-public class SingleDimensionArray {
+public class Demo {
     public int a = 11;
 
     public static void main(String[] args) {
