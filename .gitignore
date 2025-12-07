@@ -1,0 +1,18 @@
+### IntelliJ IDEA ###
+.idea/
+*.iml
+
+### Compiled Output ###
+out/
+target/
+build/
+
+### VS Code ###
+.vscode/
+
+### OS Junk ###
+.DS_Store
+Thumbs.db
+
+### Logs ###
+*.log
