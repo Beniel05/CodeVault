@@ -16,11 +16,17 @@ public class A00_CreatingAnArray {
         arrayName[1] = 20;
         arrayName[2] = 30;
 
-        System.out.println(Arrays.toString(arrayName));
         // Converts the array into a readable string format to print its elements instead of the memory reference
+        System.out.println(Arrays.toString(arrayName));
 
-        System.out.print(arrayName);
         // This prints the internal memory reference of the array
+        System.out.println(arrayName);
 
+        // The above steps in one line:
+        int[] arrayName1 = {10, 20, 30};     // Shorthand style
+        int[] arrayName2 = new int[]{10,20,30}; // Explicit style
+
+        System.out.println(Arrays.toString(arrayName1));
+        System.out.println(Arrays.toString(arrayName2));
     }
 }
