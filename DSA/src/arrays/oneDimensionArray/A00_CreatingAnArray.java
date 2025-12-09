@@ -22,11 +22,20 @@ public class A00_CreatingAnArray {
         // This prints the internal memory reference of the array
         System.out.println(arrayName);
 
-        // The above steps in one line:
+        // Array creation in a single line (shorthand & explicit styles)
         int[] arrayName1 = {10, 20, 30};     // Shorthand style
         int[] arrayName2 = new int[]{10,20,30}; // Explicit style
 
         System.out.println(Arrays.toString(arrayName1));
         System.out.println(Arrays.toString(arrayName2));
+
+
+        // -------------------- STRING ARRAY EXAMPLE --------------------
+
+        // Declaration, instantiation, and initialization in one line
+        String[] names = {"Ben", "Alex", "Sam"};
+
+        // Printing String array
+        System.out.println(Arrays.toString(names));
     }
 }
