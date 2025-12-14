@@ -4,8 +4,8 @@ public class A06_DeletingElementIn2DArray {
 
     static int[][] arr = {
             {1, 33, 55, 91},
-            {5, 4, 10, 11}, // first 10
-            {24, 50, 10, 40} // second 10
+            {5, 4, 10, 11},
+            {24, 50, 10, 40}
     };
 
     static final int EMPTY = Integer.MIN_VALUE;
