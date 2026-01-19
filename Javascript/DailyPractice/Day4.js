@@ -17,6 +17,7 @@ const temp2 = [100]
 // 2) Breaking up into sub-problems
 const calcAmplitude = function (arr, arr2) {
     let arr3 = arr.concat(arr2);
+    debugger;
     let highest = Number.MIN_SAFE_INTEGER;
     let lowest = Number.MAX_SAFE_INTEGER;
     for (let i = 0; i < arr3.length; i++) {
