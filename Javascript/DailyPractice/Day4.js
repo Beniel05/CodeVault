@@ -14,10 +14,7 @@ const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
 const temp2 = [100]
 
 // 1) Understand the problem
-
 // 2) Breaking up into sub-problems
-
-
 const calcAmplitude = function (arr, arr2) {
     let arr3 = arr.concat(arr2);
     let highest = Number.MIN_SAFE_INTEGER;
@@ -48,7 +45,21 @@ console.log(reverse(array));
 
 
 // Celcius to Kelvin
-const messureKelvin = function () {
-    let Celcius = Number(prompt("Enter the celcius: "))
-    return `${Celcius + 273} Kelvin`;
+// const measureKelvinSample = function () {
+//     let Celcius = Number(prompt("Enter the celcius: "))
+//     return `${Celcius + 273} Kelvin`;
+// }
+
+const measureKelvin = function () {
+    const measurement = {
+        type: 'temp',
+        unit: 'kelvin',
+        value: 10,
+    }
+
+    const value = measurement.value;
+    const kelvin = value + 273;
+    return `${value} celcius is equals to ${kelvin} kelvin`
 }
+
+console.log(measureKelvin());
